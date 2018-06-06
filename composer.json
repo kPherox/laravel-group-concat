@@ -1,0 +1,31 @@
+{
+    "name": "kpherox/laravel-group-concat",
+    "description": "Add GROUP_CONCAT() to Query\\Builder",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "kPherox",
+            "email": "admin@mail.kr-kp.com"
+        }
+    ],
+    "require": {
+        "illuminate/support": "^5.0",
+        "illuminate/database": "^5.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^3.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "kPherox\\GroupConcat\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "kPherox\\GroupConcat\\Providers\\GroupConcatServiceProvider"
+            ]
+        }
+    }
+}
